@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<span class="count">0</span>
+		<button class="add-btn">add</button>
+		<button class="substract-btn">substract</button>
+
+		<script>
+			const countEle = document.querySelector('.count')
+			const addBtn = document.querySelector('.add-btn')
+			const subtractBtn = document.querySelector('.substract-btn')
+
+			countEle.textContent = document.cookie.split('=')[1] || 0
+			;[
+				{
+					element: addBtn,
+					api: 'http://localhost:3000/add',
+				},
+				{
+					element: subtractBtn,
+					api: 'http://localhost:3000/subtract',
+				},
+			].forEach(({ element, api }) => {
+				element.addEventListener('click', () => {
+					fetch(api).then((res) => {
+						if (res.status === 200) {
+							const count = document.cookie.split('=')[1]
+							countEle.textContent = count
+						}
+					})
+				})
+			})
+			// addBtn.addEventListener('click', () => {
+			// 	fetch('http://localhost:3000/add').then((res) => {
+			// 		if (res.status === 200) {
+			// 			const count = document.cookie.split('=')[1]
+			// 			countEle.textContent = count
+			// 		}
+			// 	})
+			// })
+
+			// subtractBtn.addEventListener('click', () => {
+			// 	fetch('http://localhost:3000/subtract').then((res) => {
+			// 		if (res.status === 200) {
+			// 			const count = document.cookie.split('=')[1]
+			// 			countEle.textContent = count
+			// 		}
+			// 	})
+			// })
+		</script>
+	</body>
+</html>
