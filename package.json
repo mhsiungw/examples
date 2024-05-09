@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
-	"workspaces": [
-		"packages/cookie-counter"
-	],
+  "scripts": {},
+  "workspaces": [
+    "packages/cookie-counter",
+		"packages/react-tailwind",
+    "packages/react-context"
+  ],
   "keywords": [],
   "author": "",
   "license": "ISC"
