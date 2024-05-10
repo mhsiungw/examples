@@ -1,14 +1,14 @@
 import React from 'react'
-import OtherComponent from './OtherComponent'
+import SideBarDependent from './SideBarDependent'
 import DoNotReRenderMe from './DoNotReRenderMe'
 
-export default function Main({ isSideBarOpen }) {
+export default function Main() {
 	return (
 		<>
 			<div>
 				Main
 				<DoNotReRenderMe/>
-				<OtherComponent isSideBarOpen={isSideBarOpen} />
+				<SideBarDependent />
 			</div>
 		</>
 	)

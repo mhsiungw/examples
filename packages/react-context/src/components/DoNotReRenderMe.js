@@ -7,9 +7,5 @@ export default function DoNotReRenderMe() {
 		count.current++
 	})
 
-	console.log('count', count.current);
-
-	return (<div>
-		Do Not Render Me
-	</div>)
+	return <div>Do Not Render Me</div>
 }

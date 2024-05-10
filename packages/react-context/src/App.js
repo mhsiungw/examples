@@ -1,18 +1,15 @@
 import React from 'react'
 import Main from './components/Main'
 import SideBar from './components/SideBar'
+import SideBarController from './context/SideBarController'
 
-export default function App () {
-	const [isSideBarOpen, setIsSideBarOpen] = React.useState(false)
-
-	const handleSideBarToggle = () => {
-		setIsSideBarOpen(!isSideBarOpen)
-	}
-
-	return (	
+export default function App() {
+	return (
 		<div className='flex'>
-			<SideBar isSideBarOpen={isSideBarOpen} onToggle={handleSideBarToggle}/>
-			<Main isSideBarOpen={isSideBarOpen}/>
+			<SideBarController>
+				<SideBar/>
+				<Main/>
+			</SideBarController>
 		</div>
 	)
-};
+}
