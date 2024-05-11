@@ -6,8 +6,9 @@
   "scripts": {},
   "workspaces": [
     "packages/cookie-counter",
-		"packages/react-tailwind",
-    "packages/react-context"
+    "packages/react-tailwind",
+    "packages/react-context",
+    "packages/redux"
   ],
   "keywords": [],
   "author": "",
