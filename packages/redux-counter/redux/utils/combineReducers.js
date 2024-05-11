@@ -1,5 +1,5 @@
-import mapValues from '../utils/mapValues';
-import pick from '../utils/pick';
+import mapValues from './mapValues';
+import pick from './pick';
 import invariant from 'invariant';
 import { ActionTypes } from '../Store';
 

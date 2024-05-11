@@ -8,7 +8,7 @@
     "packages/cookie-counter",
     "packages/react-tailwind",
     "packages/react-context",
-    "packages/redux"
+    "packages/redux-counter"
   ],
   "keywords": [],
   "author": "",
