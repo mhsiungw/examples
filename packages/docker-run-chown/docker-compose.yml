@@ -1,0 +1,13 @@
+version: "3"
+services:
+  multi-stage:
+    image: "multi-stage"
+    build:
+      context: .
+      dockerfile: Dockerfile.multi-stage
+
+  with-chown:
+    image: "with-chown"
+    build:
+      context: .
+      dockerfile: Dockerfile.with-chown

@@ -9,7 +9,8 @@
     "packages/react-tailwind",
     "packages/react-context",
     "packages/redux-counter",
-    "packages/carousel"
+    "packages/carousel",
+    "packages/docker-run-chmod"
   ],
   "keywords": [],
   "author": "",

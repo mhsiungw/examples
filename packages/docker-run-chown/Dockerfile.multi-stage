@@ -1,0 +1,16 @@
+FROM alpine AS base
+
+WORKDIR /app
+
+COPY . .
+
+FROM alpine AS final_image
+
+WORKDIR /app
+
+RUN adduser --system docker
+
+COPY --from=base /app /app/
+
+USER docker
+
