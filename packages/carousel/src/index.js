@@ -2,6 +2,7 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import Carousel1 from "./carousel1";
 import Carousel2 from "./carousel2";
+import Carousel3 from "./carousel3";
 import "./style.css";
 
 const container = document.getElementById("root");
@@ -19,6 +20,12 @@ const App = () => (
         Carousel2
       </h1>
       <Carousel2 />
+    </div>
+    <div>
+      <h1 className="bg-sky-700 px-4 py-2 text-white hover:bg-sky-800 sm:px-8 sm:py-3">
+        Carousel3
+      </h1>
+      <Carousel3 />
     </div>
   </>
 );
