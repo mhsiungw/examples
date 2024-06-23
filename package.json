@@ -10,7 +10,8 @@
     "packages/react-context",
     "packages/redux-counter",
     "packages/carousel",
-    "packages/docker-run-chmod"
+    "packages/docker-run-chmod",
+    "packages/express-and-prisma"
   ],
   "keywords": [],
   "author": "",
