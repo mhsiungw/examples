@@ -11,7 +11,9 @@
     "packages/redux-counter",
     "packages/carousel",
     "packages/docker-run-chmod",
-    "packages/express-and-prisma"
+    "packages/express-and-prisma",
+    "packages/condition-exports",
+    "packages/condition-exports-lib"
   ],
   "keywords": [],
   "author": "",

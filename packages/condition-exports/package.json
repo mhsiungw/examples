@@ -1,0 +1,12 @@
+{
+  "name": "condition-exports",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./index.cjs"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "condition-exports-lib": "file:../condition-exports-lib"
+  }
+}
