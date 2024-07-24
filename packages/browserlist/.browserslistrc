@@ -1,0 +1,9 @@
+# Browsers that we support
+
+# will tell autoprefixer to add prefix for background-clip: text;
+# https://caniuse.com/?compare=chrome+100&compareCats=CSS
+# Chrome 100
+
+# prefix for background-clip: text for this version
+# https://caniuse.com/?compare=chrome+126&compareCats=CSS
+# Chrome 126

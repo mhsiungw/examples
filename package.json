@@ -13,7 +13,8 @@
     "packages/docker-run-chmod",
     "packages/express-and-prisma",
     "packages/condition-exports",
-    "packages/condition-exports-lib"
+    "packages/condition-exports-lib",
+    "packages/browserlist"
   ],
   "keywords": [],
   "author": "",
