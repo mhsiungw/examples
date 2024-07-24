@@ -1,6 +1,6 @@
-const minus = require("condition-exports-lib");
-async function useExternalLib() {
-  console.log(minus(1, 2));
-}
+/**
+ * need node || require || node-addons || default
+ */
 
-useExternalLib();
+const minus = require("condition-exports-lib");
+console.log(minus(1, 2));
